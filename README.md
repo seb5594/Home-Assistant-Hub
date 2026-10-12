@@ -2,7 +2,7 @@
 
 [![Home Assistant](https://img.shields.io/static/v1?label=Home%20Assistant&message=Add%20app%20repository&color=18BCF2&style=flat&logo=homeassistant&logoColor=white)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fseb5594%2FHome-Assistant-Apps) [![HACS](https://img.shields.io/static/v1?label=HACS&message=browse%20integrations&color=1877A5&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations)<br>
 [![hub sync](https://img.shields.io/github/actions/workflow/status/seb5594/Home-Assistant-Hub/update.yml?branch=main&label=hub%20sync&style=flat)](https://github.com/seb5594/Home-Assistant-Hub/actions/workflows/update.yml) [![apps](https://img.shields.io/static/v1?label=apps&message=2&color=157F71&style=flat)](https://github.com/seb5594/Home-Assistant-Apps) [![integrations](https://img.shields.io/static/v1?label=integrations&message=1&color=157F71&style=flat)](https://github.com/seb5594/Home-Assistant-Integrations) ![repositories](https://img.shields.io/static/v1?label=repositories&message=3&color=5B6770&style=flat)<br>
-[![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Hub?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Hub/commits/main)
+[![stars](https://img.shields.io/github/stars/seb5594/Home-Assistant-Hub?label=stars&style=flat)](https://github.com/seb5594/Home-Assistant-Hub/stargazers) [![synced](https://img.shields.io/github/last-commit/seb5594/Home-Assistant-Hub?label=synced&style=flat)](https://github.com/seb5594/Home-Assistant-Hub/commits/main)
 
 Everything I publish for Home Assistant in one place: apps for the Supervisor and custom
 integrations for HACS. This page is generated from the two catalogs and always shows the versions
@@ -35,6 +35,14 @@ options and documentation are in each app's repository.
 Integrations install through HACS and are configured under **Settings → Devices & services**.
 Only public projects are listed.
 
+## How this works
+
+Each app or integration lives in its own repository and ships through one shared pipeline. The
+[app catalog](https://github.com/seb5594/Home-Assistant-Apps) and the
+[integration catalog](https://github.com/seb5594/Home-Assistant-Integrations) pin the latest
+version of every public project; this hub reads both and renders the overview every hour and
+whenever a catalog changes.
+
 ## Say thanks
 
 All my projects are built in my spare time, just for the fun of it. Still, they take a lot of time and care, and many of the smart home gadgets I buy end up here because I want to make them cloud-free and smart-home ready. Every bit of support means a lot to me.
@@ -43,10 +51,6 @@ If my work helped you or turned out to be useful, show your appreciation with a 
 
 [![Buy Me a Coffee](https://img.shields.io/static/v1?label=Support&message=Buy%20Me%20a%20Coffee&color=FFDD00&logo=buy-me-a-coffee&logoColor=black&style=for-the-badge)](https://buymeacoffee.com/seb5594) [![PayPal](https://img.shields.io/static/v1?label=Support&message=PayPal&color=0070BA&logo=paypal&logoColor=white&style=for-the-badge)](https://www.paypal.com/donate/?hosted_button_id=QMQPNRENXDN26)
 
-## How this works
+## License
 
-Each app or integration lives in its own repository and ships through one shared pipeline. The
-[app catalog](https://github.com/seb5594/Home-Assistant-Apps) and the
-[integration catalog](https://github.com/seb5594/Home-Assistant-Integrations) pin the latest
-version of every public project; this hub reads both and renders the overview every hour and
-whenever a catalog changes.
+Every project listed here is licensed on its own. The `LICENSE` file in each repository states which terms apply.
